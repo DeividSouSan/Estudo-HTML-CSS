@@ -8,7 +8,15 @@
 </head>
 <body>
     <h1>Imagens Dinamicas:</h1>
-    <p>Sao imagens que se adaptam ao tamanho da tela do dispositivo utilizado.</p>
+    <p>Sao imagens que se adaptam ao tamanho da tela do dispositivo utilizado. Mudar a dimensao do navegador tambem altera a imagem disposta.</p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/pequeno.png", type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/medio.png" type="image/png">
+        <img src="imagens/grande.png" alt="Imagem Grande">
+    </picture>
+
+    <p>A principio o source vira com o min-width, porem, acho mais facil trabalhar com o max width. Lembre sempre de deixar uma margem de alguns pixels para quando o dispositivo estiver na imininencia de trocar de imagem ele esperar um pouco -- ainda mais por que tem as bordas da imagem tambem. A ordem dos sources tambem importa, lembre-se de sempre deixar as imagens em ordem crescente.</p>
 
 </body>
 </html>
