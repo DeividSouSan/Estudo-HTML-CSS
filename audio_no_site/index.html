@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia de Audio</title>
+</head>
+<body>
+    <h1>Tocando Audio no Site</h1>
+    <p>Vamos tocar uma musica utilizando a tag audio.</p>
+
+    <audio controls>
+        <source src="media/guanacast-33.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls>
+        <source src="media/happy-mistake.mp3" type="audio/mpeg">
+        <p>Incompativel.</p>
+    </audio>
+    
+    <p>Dentro da tag audio podemos colocar a tag source. Assim como as imagens a ordem aqui importa. O primeiro source vai ser o primeiro a tentar ser reproduzido, caso nao seja possivel ele vai para o proximo. Por isso a tag p dizendo incompatibilidade fica por ultimo.</p>
+</body>
+</html>
